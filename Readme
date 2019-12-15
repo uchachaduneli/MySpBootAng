@@ -1,0 +1,17 @@
+Project Based on:
+ 1) Spring Boot,
+ 2) JPA,
+ 3) RestFull,
+ 4) Swagger2 - for documentation, JWT tokent authentication
+
+For swagger access to the link: http://localhost:8080/swagger-ui.html
+
+On init default user role - ADMIN will be created
+You need to post json bellow to URL: http://localhost:8080/api/auth/register
+{"email": " some mail here ","enabled": true,"fullname": "Your Name","id": 0,"password": "Password Here","roles": [{"id": 0,"role": "ADMIN"}]}
+after that user will be created and you get token in response body,
+For every authorized requests you need to include this tocken into header with key - 'Authorization'
+ex: Authorization - 'Token from login RESPONSE'
+
+Authorization is build by this URL
+https://codequs.com/p/rkBWrhkv4/securing-restful-api-with-spring-boot-security-and-data-mongodb#ch5
