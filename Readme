@@ -12,6 +12,3 @@ You need to post json bellow to URL: http://localhost:8080/api/auth/register
 after that user will be created and you get token in response body,
 For every authorized requests you need to include this tocken into header with key - 'Authorization'
  key: 'Authorization'   value: 'Bearer' + space + token
-
-Authorization is build by this URL
-https://codequs.com/p/rkBWrhkv4/securing-restful-api-with-spring-boot-security-and-data-mongodb#ch5
